@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Medical emergencies" content="">
+    <meta name="Florea Gabriel-Alin" content="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <title>Medical emergencies</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("https://stmed.net/sites/default/files/medical-wallpapers-28725-6820489.jpg");
+            width: 100%;
+            height: 100%;
+        }
+
+        .topnav {
+            overflow: auto;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .clockdate-wrapper {
+            background-color: #333;
+            padding:20px;
+            max-width:450px;
+            width:100%;
+            text-align:center;
+            border-radius:5px;
+            margin:0 auto;
+            margin-top:-2%;
+        }
+        #clock{
+            background-color:#333;
+            font-family: sans-serif;
+            font-size:40px;
+            text-shadow:0px 0px 1px #fff;
+            color:#fff;
+        }
+        #clock span {
+            color:#888;
+            text-shadow:0px 0px 1px #333;
+            font-size:30px;
+            position:relative;
+            top:-27px;
+            left:-10px;
+        }
+        #date {
+            letter-spacing:12px;
+            font-size:14px;
+            font-family:arial,sans-serif;
+            color:#fff;
+        }
+        .table-wrapper {
+            width: 1500px;
+            margin-left: -180px;
+            background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/16/74/0458259b5038706.jpg");
+            padding: 10px;
+        }
+        .table-title {
+            padding-bottom: 10px;
+            margin: 0 0 10px;
+        }
+        .table-title h2 {
+            margin: 6px 0 0;
+            font-size: 22px;
+        }
+        .table-title .add-new {
+            float: right;
+            height: 30px;
+            font-weight: bold;
+            font-size: 19px;
+            text-shadow: none;
+            min-width: 100px;
+            border-radius: 50px;
+            line-height: 13px;
+        }
+        .table-title .add-new i {
+            margin-right: 4px;
+        }
+        table.table {
+            border-color: #4CAF50;
+            table-layout: fixed;
+        }
+        table.table tr th, table.table tr td {
+            border-color: #4CAF50;
+        }
+        table.table th i {
+            font-size: 18px;
+            margin: 0 3px;
+            cursor: pointer;
+        }
+        table.table th:last-child {
+            width: 160px;
+        }
+        table.table td a {
+            cursor: pointer;
+            display: inline-block;
+            margin: 0 0px;
+            min-width: 24px;
+        }
+        table.table td a.add {
+            color: #27C46B;
+        }
+        table.table td a.edit {
+            color: #FFC107;
+        }
+        table.table td a.delete {
+            color: #E34724;
+        }
+        table.table td i {
+            font-size: 19px;
+        }
+        table.table td a.add i {
+            font-size: 24px;
+            margin-right: -1px;
+            position: relative;
+            top: 3px;
+        }
+        table.table .form-control {
+            height: 32px;
+            line-height: 32px;
+            box-shadow: none;
+            border-radius: 2px;
+        }
+        table.table .form-control.error {
+            border-color: #4CAF50;
+        }
+        table.table td .add {
+            display: none;
+        }
+
+
+
+        ul {
+            list-style-type: none;
+            margin-top: 1px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        #login .container #login-row #login-column #login-box {
+            margin-top: 120px;
+            max-width: 600px;
+            height: 320px;
+            border: 1px solid #9C9C9C;
+            background-color: #EAEAEA;
+        }
+        #login .container #login-row #login-column #login-box #login-form {
+            padding: 20px;
+        }
+        #login .container #login-row #login-column #login-box #login-form #register-link {
+            margin-top: -85px;
+        }
+    </style>
+</head>
+<body onload="startTime()">
+
+<div class="topnav">
+    <a class="active" >Staff</a>
+    <a th:href="@{/home}" >Others/Logout</a>
+</div>
+
+<ul>
+    <li><a class="active" th:href="@{/startPage}">  Patients  </a></li>
+    <li><a th:href="@{/add}">  Add patient  </a></li>
+    <li><a th:href="@{/edit}">  Edit patient  </a></li>
+    <li><a th:href="@{/delete}">  Delete patient  </a></li>
+    <li><a th:href="@{/staff}">  Staff  </a></li>
+    <li><a th:href="@{/about}">  About hospital  </a></li>
+</ul>
+
+
+
+<div style="padding-left:16px">
+    <h2 style="font-size: x-large"  >Edit patient data</h2>
+</div>
+
+<form th:action = "@{/editPatient}" id="editpatientform" method="post">
+    <div id="editPatient">
+        <div class="container">
+            <div id="register-row" class="row justify-content-center align-items-center">
+                <div id="register-column" class="col-md-6">
+                    <div id="register-box" class="col-md-12">
+                        <form id="register-form" class="form" action="" method="post">
+                            <div class="form-group">
+                                <label for="patientName" class="text-info">Name:</label><br>
+                                <input id="patientName" type="text" class="form-control" name="patientName" th:value="${patient.getPatientName()}" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="processingState" class="text-info">Processing state:</label><br>
+                                <input id="processingState" type="text" class="form-control" name="processingState" th:value="${patient.getProcessingState()}">
+                            </div>
+                            <div class="form-group">
+                                <label for="physiologicalCondition" class="text-info">Physiological condition:</label><br>
+                                <input id="physiologicalCondition" type="text" class="form-control" name="physiologicalCondition" th:value="${patient.getPhysiologicalCondition()}">
+                            </div>
+                            <div class="form-group">
+                                <label for="emergencyType" class="text-info">Emergency type:</label><br>
+                                <input id="emergencyType" type="text" class="form-control" name="emergencyType" th:value="${patient.getEmergencyType()}">
+                            </div>
+                            <div class="form-group">
+                                <label for="location" class="text-info">Location:</label><br>
+                                <input id="location" type="text" class="form-control" name="location" th:value="${patient.getLocation()}">
+                            </div>
+                            <div class="form-group">
+                                <label for="patientHistory" class="text-info">Patient history:</label><br>
+                                <input id="patientHistory" type="text" class="form-control" name="patientHistory" th:value="${patient.getPatientHistory()}">
+                            </div>
+                            <div class="form-group">
+                                <label for="treatmentsPerformed" class="text-info">Treatments performed:</label><br>
+                                <input id="treatmentsPerformed" type="text" class="form-control" name="treatmentsPerformed" th:value="${patient.getTreatmentsPerformed()}">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" name="submit" class="btn btn-info btn-md" value="Confirm modifications">
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>

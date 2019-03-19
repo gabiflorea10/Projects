@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Medical emergencies</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #17a2b8;
+            background-image: url("https://stmed.net/sites/default/files/medical-wallpapers-28725-6820489.jpg");
+            width: 100%;
+            height: 100%;
+        }
+
+        .topnav {
+            overflow: auto;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        #login .container #login-row #login-column #login-box {
+            margin-top: 120px;
+            max-width: 600px;
+            height: 320px;
+            border: 1px solid #9C9C9C;
+            background-color: #EAEAEA;
+        }
+        #login .container #login-row #login-column #login-box #login-form {
+            padding: 20px;
+        }
+        #login .container #login-row #login-column #login-box #login-form #register-link {
+            margin-top: -85px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="topnav">
+    <a class="active" >Staff</a>
+    <a  th:href="@{/home}">Others</a>
+</div>
+
+<div class="topnav">
+    <a  th:href="@{/login}">Login</a>
+</div>
+
+<form th:action = "@{/register}" th:object = "${registerStaff}" id="registerform" method="post">
+    <div id="register">
+        <div class="container">
+            <div id="register-row" class="row justify-content-center align-items-center">
+                <div id="register-column" class="col-md-6">
+                    <div id="register-box" class="col-md-12">
+                        <form id="register-form" class="form" action="" method="post">
+                            <h3 class="text-center text-info">Register</h3>
+                            <div class="form-group">
+                                <label for="MedUsername" class="text-info">Username:</label><br>
+                                <input id="medUsername" type="text" class="form-control" name="medUsername" placeholder="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="medPassword" class="text-info">Password:</label><br>
+                                <input id="medPassword" type="password" class="form-control" name="medPassword" placeholder="password">
+                            </div>
+                            <div class="form-group">
+                                <label for="MedName" class="text-info">Name:</label><br>
+                                <input id="medName" type="text" class="form-control" name="medName" placeholder="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="MedType" class="text-info">Staff type:</label><br>
+                                <input id="medType" type="text" class="form-control" name="medType" placeholder="staff type">
+                            </div>
+                            <div class="form-group">
+                                <label for="MedSpecialization" class="text-info">Specialization:</label><br>
+                                <input id="medSpecialization" type="text" class="form-control" name="medSpecialization" placeholder="specialization">
+                            </div>
+                            <div class="form-group">
+                                <label for="MedYearOfPracticeBeginning" class="text-info">Year of practice beginning:</label><br>
+                                <input id="medYearOfPracticeBeginning" type="text" class="form-control" name="MedYearOfPracticeBeginning" placeholder="year of practice beginning">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" name="submit" class="btn btn-info btn-md" value="SignUp">
+                            </div>
+
+                            <div style="margin-top:10px" class="form-group">
+                                <div class="container">
+                                    <p1 style="width: auto" th:if="${invalidRegister}">User already exists</p1>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+
+</html>

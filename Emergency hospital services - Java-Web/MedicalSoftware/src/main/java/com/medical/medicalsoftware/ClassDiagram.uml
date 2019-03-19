@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="186.0" y="74.0">com.medical.medicalsoftware.configuration.DbConfiguration</node>
+    <node x="0.0" y="0.0">com.medical.medicalsoftware.controller.StartPageController</node>
+    <node x="0.0" y="148.0">com.medical.medicalsoftware.controller.HomeController</node>
+    <node x="0.0" y="222.0">com.medical.medicalsoftware.repository.StaffRepository</node>
+    <node x="0.0" y="74.0">com.medical.medicalsoftware.repository.PatientRepository</node>
+    <node x="196.0" y="0.0">com.medical.medicalsoftware.configuration.WebConfiguration</node>
+    <node x="0.0" y="296.0">com.medical.medicalsoftware.model</node>
+    <node x="173.0" y="222.0">com.medical.medicalsoftware.service</node>
+    <node x="179.0" y="148.0">com.medical.medicalsoftware.controller.LoginController</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="0.8" x="565.0" y="211.875" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

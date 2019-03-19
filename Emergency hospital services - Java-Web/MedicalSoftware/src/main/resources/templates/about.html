@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Medical emergencies" content="">
+    <meta name="Florea Gabriel-Alin" content="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <title>Medical emergencies</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("https://stmed.net/sites/default/files/medical-wallpapers-28725-6820489.jpg");
+            width: 100%;
+            height: 100%;
+        }
+
+        table.GeneratedTable {
+            width: 20%;
+            background-color: #ffffff;
+            border-collapse: collapse;
+            margin-left: 5%;
+            border-width: 2px;
+            border-color: #ffcc00;
+            border-style: solid;
+            color: #000000;
+        }
+
+        table.GeneratedTable td, table.GeneratedTable th {
+            border-width: 2px;
+            border-color: #ffcc00;
+            border-style: solid;
+            padding: 3px;
+        }
+
+        table.GeneratedTable thead {
+            background-color: #ffcc00;
+        }
+
+        .topnav {
+            overflow: auto;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+
+
+        ul {
+            list-style-type: none;
+            margin-top: 1px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+    </style>
+</head>
+<body onload="startTime()">
+
+<div class="topnav">
+    <a class="active" >Staff</a>
+    <a th:href="@{/home}" >Others/Logout</a>
+</div>
+
+
+<ul>
+    <li><a class="active" th:href="@{/startPage}">  Patients  </a></li>
+    <li><a th:href="@{/add}">  Add patient  </a></li>
+    <li><a th:href="@{/edit}">  Edit patient  </a></li>
+    <li><a th:href="@{/delete}">  Delete patient  </a></li>
+    <li><a th:href="@{/staff}">  Staff  </a></li>
+    <li><a th:href="@{/about}">  About hospital  </a></li>
+</ul>
+
+
+<div style="padding-left:16px">
+    <h2 style="font-size: x-large"  >About hospital</h2>
+    <br>
+    <br>
+    <h3>County Clinical Emergency Hospital of Cluj-Napoca</h3>
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Romania, Cluj, Cluj-Napoca, Clinicilor Street 5-7</h3>
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;46.7654, 23.58345</h3>
+    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone: 0264 597 852</h3>
+
+</div>
+
+<br>
+
+<table class="GeneratedTable">
+    <thead>
+    <tr>
+        <th>Internal intercom</th>
+        <th>Specialities</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>311</td>
+        <td>Cardiology</td>
+    </tr>
+    <tr>
+        <td>259</td>
+        <td>Neurology</td>
+    </tr>
+    <tr>
+        <td>271</td>
+        <td>Radiology</td>
+    </tr>
+    <tr>
+        <td>397</td>
+        <td>Laboratory</td>
+    </tr>
+    <tr>
+        <td>217</td>
+        <td>Pediatrics</td>
+    </tr>
+    <tr>
+        <td>355</td>
+        <td>Surgery</td>
+    </tr>
+    <tr>
+        <td>107</td>
+        <td>Urology</td>
+    </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>
