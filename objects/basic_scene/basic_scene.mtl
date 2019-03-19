@@ -1,0 +1,27 @@
+# Blender MTL File: 'my_blending.blend'
+# Material Count: 2
+
+newmtl mtl_001
+Ns 49.019608
+Ka 0.384583 0.384583 0.384583
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.700000
+illum 2
+map_Kd textures\txt_001_diff.png
+map_Bump textures\txt_002_bump.png
+
+newmtl mtl_001.001
+Ns 49.019608
+Ka 0.384583 0.384583 0.384583
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.700000
+illum 2
+
+map_Kd Desert_Sand_Texture-1203.jpg
+map_Bump textures\txt_002_bump.png
