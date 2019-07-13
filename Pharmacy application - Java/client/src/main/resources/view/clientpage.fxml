@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.utcluj.controller.FXMLClientController">
+   <children>
+      <TabPane layoutY="21.0" prefHeight="376.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="View all drugs">
+               <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="316.0" prefWidth="595.0">
+                     <children>
+                        <AnchorPane layoutY="-1.0" prefHeight="366.0" prefWidth="600.0">
+                           <children>
+                              <TableView fx:id="drugViewTable" layoutX="8.0" layoutY="4.0" prefHeight="359.0" prefWidth="586.0">
+                                 <columns>
+                                    <TableColumn fx:id="drugIdCol" prefWidth="46.0" text="Id" />
+                                    <TableColumn fx:id="drugNameCol" prefWidth="86.0" text="Name" />
+                                    <TableColumn fx:id="drugProducerCol" prefWidth="103.0" text="Producer" />
+                                    <TableColumn fx:id="drugUsefulforCol" prefWidth="169.0" text="Usefulness" />
+                                    <TableColumn fx:id="drugTermofvalidityCol" prefWidth="103.0" text="Validity" />
+                                    <TableColumn fx:id="drugPriceCol" prefWidth="78.0" text="Price" />
+                                 </columns></TableView>
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+               </content>
+          </Tab>
+          <Tab text="Find drugs">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="drugViewTable1" layoutX="4.0" layoutY="7.0" prefHeight="172.0" prefWidth="592.0">
+                           <columns>
+                              <TableColumn fx:id="drugIdCol1" prefWidth="46.0" text="Id" />
+                              <TableColumn fx:id="drugNameCol1" prefWidth="86.0" text="Name" />
+                              <TableColumn fx:id="drugProducerCol1" prefWidth="103.0" text="Producer" />
+                              <TableColumn fx:id="drugUsefulforCol1" prefWidth="169.0" text="Usefulness" />
+                              <TableColumn fx:id="drugTermofvalidityCol1" prefWidth="103.0" text="Validity" />
+                              <TableColumn fx:id="drugPriceCol1" prefWidth="84.0" text="Price" />
+                           </columns>
+                        </TableView>
+                        <TextField fx:id="searchByName" layoutX="29.0" layoutY="206.0" promptText="Insert drug name" />
+                        <TextField fx:id="searchBySymptom" layoutX="29.0" layoutY="253.0" promptText="Insert symptom" />
+                        <Button layoutX="203.0" layoutY="206.0" mnemonicParsing="false" onAction="#searchByNamePressed" text="Find by name" />
+                        <Button layoutX="203.0" layoutY="253.0" mnemonicParsing="false" onAction="#searchBySymptomPressed" text="Find by symptoms" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Buy drugs">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="278.0" layoutY="215.0" mnemonicParsing="false" onAction="#buyButtonPressed" prefHeight="49.0" prefWidth="94.0" text="Buy" />
+                        <TextField fx:id="idDrugBuy" layoutX="51.0" layoutY="78.0" promptText="Insert drug id" />
+                        <Label fx:id="buyMessageLabel" layoutX="298.0" layoutY="165.0" prefHeight="26.0" prefWidth="225.0" />
+                        <Button layoutX="52.0" layoutY="126.0" mnemonicParsing="false" onAction="#uploadPrescriptionPressed" prefHeight="25.0" prefWidth="147.0" text="Upload prescription" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Personal orders">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="orderViewTable" layoutX="3.0" layoutY="1.0" prefHeight="359.0" prefWidth="594.0">
+                          <columns>
+                            <TableColumn fx:id="orderIdCol" prefWidth="179.0" text="Id" />
+                            <TableColumn fx:id="orderDrugCol" prefWidth="202.0" text="Drug" />
+                              <TableColumn fx:id="orderDateCol" prefWidth="212.0" text="Date" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Money">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="addMoneyField" layoutX="101.0" layoutY="131.0" promptText="Add money" />
+                        <Button layoutX="281.0" layoutY="131.0" mnemonicParsing="false" onAction="#addMoneyButton" prefHeight="25.0" prefWidth="100.0" text="Add" />
+                        <Label fx:id="addMoneyLabel" layoutX="101.0" layoutY="174.0" prefHeight="27.0" prefWidth="169.0" />
+                        <Label fx:id="moneyAmountLabel" layoutX="232.0" layoutY="59.0" prefHeight="27.0" prefWidth="136.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="101.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount of money:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Edit personal data">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="editNameField" layoutX="56.0" layoutY="42.0" promptText="name" />
+                        <TextField fx:id="editPhoneField" layoutX="56.0" layoutY="85.0" promptText="phone" />
+                        <TextField fx:id="editEmailField" layoutX="56.0" layoutY="129.0" promptText="email" />
+                        <TextField fx:id="editUsernameField" disable="true" editable="false" layoutX="56.0" layoutY="174.0" promptText="username" />
+                        <PasswordField fx:id="editPasswordField" layoutX="56.0" layoutY="219.0" promptText="password" />
+                        <Button layoutX="330.0" layoutY="206.0" mnemonicParsing="false" onAction="#editConfirmButton" prefHeight="27.0" prefWidth="130.0" text="Confirm edit" />
+                        <Label fx:id="editLabel" layoutX="282.0" layoutY="98.0" prefHeight="37.0" prefWidth="211.0" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Contact administrator">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="editLabel1" layoutX="282.0" layoutY="98.0" prefHeight="37.0" prefWidth="211.0" />
+                        <Button layoutX="422.0" layoutY="226.0" mnemonicParsing="false" onAction="#sendMessageToAdmin" text="Send message" />
+                        <TextArea fx:id="messageForAdmin" layoutX="57.0" layoutY="37.0" prefHeight="176.0" prefWidth="383.0" />
+                        <Label fx:id="labelMessageForAdmin" layoutX="121.0" layoutY="243.0" prefHeight="25.0" prefWidth="187.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="472.0" mnemonicParsing="false" onAction="#logoutPressed" prefHeight="27.0" prefWidth="130.0" text="Logout" />
+      <Button layoutY="1.0" mnemonicParsing="false" onAction="#refreshDrugsButton" text="Refresh drugs" />
+   </children>
+</AnchorPane>

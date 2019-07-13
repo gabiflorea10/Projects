@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.utcluj.controller.FXMLAdminController">
+   <children>
+      <TabPane layoutY="28.0" prefHeight="376.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Users">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="userViewTable" layoutX="-2.0" layoutY="1.0" onMouseClicked="#handleClickTable" prefHeight="197.0" prefWidth="606.0">
+                           <columns>
+                              <TableColumn fx:id="userIdCol" prefWidth="37.0" text="Id " />
+                              <TableColumn fx:id="userNameCol" prefWidth="87.0" text="Name" />
+                              <TableColumn fx:id="userPhoneCol" prefWidth="89.0" text="Phone" />
+                              <TableColumn fx:id="userEmailCol" prefWidth="81.0" text="Email" />
+                              <TableColumn fx:id="userUsernameCol" prefWidth="96.0" text="Username" />
+                              <TableColumn fx:id="userPasswordCol" prefWidth="133.0" text="Password" />
+                              <TableColumn fx:id="userMoneyCol" prefWidth="77.0" text="Money" />
+                           </columns>
+                        </TableView>
+                        <TextField fx:id="userNameField" layoutX="14.0" layoutY="216.0" promptText="Name" />
+                        <TextField fx:id="userPhoneField" layoutX="184.0" layoutY="216.0" promptText="Phone" />
+                        <TextField fx:id="userEmailField" layoutX="354.0" layoutY="216.0" promptText="Email" />
+                        <TextField fx:id="userUsernameField" layoutX="14.0" layoutY="253.0" promptText="Username" />
+                        <TextField fx:id="userMoneyField" layoutX="354.0" layoutY="253.0" promptText="Money" />
+                        <PasswordField fx:id="userPasswordField" layoutX="184.0" layoutY="253.0" promptText="Password" />
+                        <Button layoutX="314.0" layoutY="293.0" mnemonicParsing="false" onAction="#userAddButton" text="Add" />
+                        <Button layoutX="384.0" layoutY="293.0" mnemonicParsing="false" onAction="#userEditButton" text="Edit" />
+                        <Button layoutX="451.0" layoutY="293.0" mnemonicParsing="false" onAction="#userDeleteButton" text="Delete" />
+                        <Button layoutX="207.0" layoutY="293.0" mnemonicParsing="false" onAction="#userClearButton" text="Clear fields" />
+                        <Label fx:id="userModifyLabel" layoutX="14.0" layoutY="297.0" prefHeight="27.0" prefWidth="171.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Drugs">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="316.0" prefWidth="595.0">
+                     <children>
+                        <AnchorPane layoutY="-1.0" prefHeight="366.0" prefWidth="600.0">
+                           <children>
+                              <TableView fx:id="drugViewTable" onMouseClicked="#handleClickTable2" prefHeight="221.0" prefWidth="600.0">
+                                 <columns>
+                                    <TableColumn fx:id="drugIdCol" prefWidth="46.0" text="Id" />
+                                    <TableColumn fx:id="drugNameCol" prefWidth="86.0" text="Name" />
+                                    <TableColumn fx:id="drugProducerCol" prefWidth="103.0" text="Producer" />
+                                    <TableColumn fx:id="drugUsefulforCol" prefWidth="181.0" text="Usefulness" />
+                                    <TableColumn fx:id="drugTermofvalidityCol" prefWidth="91.0" text="Validity" />
+                                    <TableColumn fx:id="drugPriceCol" prefWidth="92.0" text="Price" />
+                                 </columns>
+                              </TableView>
+                              <Button layoutX="402.0" layoutY="272.0" mnemonicParsing="false" onAction="#drugClearButton" text="Clear fields" />
+                              <Button layoutX="462.0" layoutY="312.0" mnemonicParsing="false" onAction="#drugDeleteButton" text="Delete" />
+                              <Button layoutX="395.0" layoutY="312.0" mnemonicParsing="false" onAction="#drugEditButton" text="Edit" />
+                              <Button layoutX="325.0" layoutY="312.0" mnemonicParsing="false" onAction="#drugAddButton" text="Add" />
+                              <TextField fx:id="drugPriceField" layoutX="195.0" layoutY="272.0" promptText="Price" />
+                              <TextField fx:id="drugValidityField" layoutX="25.0" layoutY="272.0" promptText="Validity term" />
+                              <TextField fx:id="drugUsefulnessField" layoutX="365.0" layoutY="235.0" promptText="Usefulness" />
+                              <TextField fx:id="drugProducerField" layoutX="195.0" layoutY="235.0" promptText="Producer" />
+                              <TextField fx:id="drugNameField" layoutX="25.0" layoutY="235.0" promptText="Name" />
+                              <Label fx:id="drugMessageLabel" layoutX="64.0" layoutY="311.0" prefHeight="27.0" prefWidth="182.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Orders">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="orderViewTable" layoutX="3.0" layoutY="1.0" prefHeight="359.0" prefWidth="594.0">
+                           <columns>
+                              <TableColumn fx:id="orderIdCol" text="Id order" />
+                              <TableColumn fx:id="orderUserCol" prefWidth="204.0" text="Id user" />
+                              <TableColumn fx:id="orderDrugCol" prefWidth="177.0" text="Id drug" />
+                              <TableColumn fx:id="orderDateCol" prefWidth="132.0" text="Date" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Reports">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="228.0" layoutY="226.0" mnemonicParsing="false" onAction="#generateReportTxtButton" text="Generate report" />
+                        <TextField fx:id="startDateField" layoutX="38.0" layoutY="73.0" promptText="Start date" />
+                        <TextField fx:id="endDateField" layoutX="38.0" layoutY="124.0" promptText="End date" />
+                        <Text layoutX="99.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Best selling drugs in a certain period of time" wrappingWidth="336.279296875">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Label fx:id="reportLabel" layoutX="278.0" layoutY="118.0" prefHeight="27.0" prefWidth="218.0" />
+                        <ChoiceBox fx:id="reportTypeChoice" layoutX="38.0" layoutY="174.0" prefWidth="150.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Messages">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="messageViewTable" layoutX="4.0" layoutY="2.0" onMouseClicked="#handleClickMessageTable" prefHeight="280.0" prefWidth="594.0">
+                          <columns>
+                            <TableColumn fx:id="messIdCol" prefWidth="68.0" text="Id message" />
+                            <TableColumn fx:id="messNameCol" prefWidth="82.0" text="Client name" />
+                              <TableColumn fx:id="messMessCol" prefWidth="440.0" text="Message" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="453.0" layoutY="297.0" mnemonicParsing="false" onAction="#deleteMessageButton" text="Delete message" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Button layoutX="470.0" layoutY="1.0" mnemonicParsing="false" onAction="#logoutPressed" prefHeight="27.0" prefWidth="130.0" text="Logout" />
+      <Button layoutX="110.0" layoutY="2.0" mnemonicParsing="false" onAction="#refreshDrugs" text="Refresh drugs" />
+      <Button layoutX="207.0" layoutY="2.0" mnemonicParsing="false" onAction="#refreshOrders" text="Refresh orders" />
+      <Button layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onAction="#refreshUsers" text="Refresh users" />
+      <Button layoutX="309.0" layoutY="2.0" mnemonicParsing="false" onAction="#refreshMessages" text="Refresh messages" />
+   </children>
+</AnchorPane>
