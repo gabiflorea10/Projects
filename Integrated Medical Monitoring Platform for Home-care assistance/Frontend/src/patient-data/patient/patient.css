@@ -1,0 +1,18 @@
+.add-date{
+    display: flex;
+}
+.textDate{
+    width: 200px;
+    height: 50px;
+}
+.textRec{
+    width: 500px;
+    height: 50px;
+}
+.dateButton{
+    height: 50px;
+    width: 100px;
+}
+.recButton{
+    height: 50px;
+}
