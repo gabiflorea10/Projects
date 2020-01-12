@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestionare venituri - adaugare</title>
+    <link rel="stylesheet" href="../css/3_gestionare_venituri.css" type="text/css">
+    <link href="../resources/fontawesome/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/3_2_gestionare_venituri.js"></script>
+</head>
+
+<body class="gest-venituri-body">
+
+<div class="top-div">
+    <a href="3_1_gestionare_venituri.html"><i class="fas fa-arrow-left gest-venituri-back-arrow"></i></a>
+    <p id="gest-venituri-adauga-top-title">Adauga venit</p>
+</div>
+
+<div>
+
+    <form>
+
+        <div class="gest-venituri-adauga-tip">
+            <label for="gest-venituri-add-tip">Tip:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <select name="incomeTypes" id="gest-venituri-add-tip">
+                <option value="Salariu">Salariu</option>
+                <option value="Bursa">Bursa</option>
+                <option value="Pensie">Pensie</option>
+                <option value="Chirie">Chirie</option>
+                <option value="Altele">Altele</option>
+            </select>
+        </div>
+<br/>
+        <div>
+            <label for="gest-venituri-add-description">Descriere:</label>
+            <input type="text" id="gest-venituri-add-description"/>
+        </div>
+<br/>
+        <div>
+            <label for="gest-venituri-add-suma">Suma:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="number" id="gest-venituri-add-suma"/>
+        </div>
+<br/>
+        <button type="button" id="gest-venituri-add-income-btn-adauga">Adauga</button>
+
+    </form>
+</div>
+
+<p id="mesaj-eroare"></p>
+
+
+</body>
+</html>

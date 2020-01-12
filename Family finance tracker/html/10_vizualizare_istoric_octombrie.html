@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Istoric</title>
+    <link rel="stylesheet" href="../css/10_vizualizare_istoric.css" type="text/css">
+    <link href="../resources/fontawesome/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/10_vizualizare_istoric.js"></script>
+
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+</head>
+
+<body class="viz-istoric-body">
+
+<div class="top-div">
+    <a href="2_1_pagina_principala_adult.html"><i class="fas fa-arrow-left viz-istoric-back-arrow"></i></a>
+    <p id="viz-istoric-top-title">Vizualizare istoric</p>
+    <a href="10_vizualizare_istoric.html"><i class="fas fa-calendar-day viz-istoric-next-months"></i></a>
+</div>
+
+<div class="vizualizare-istoric-main-div">
+    <a href="10_vizualizare_istoric_octombrie.html"><i class="fas fa-arrow-left viz-istoric-previous-months"></i></a>
+    <p id="vizualizare-istoric-title">Octombrie</p>
+    <a href="10_vizualizare_istoric_noiembrie.html"><i class="fas fa-arrow-right viz-istoric-previous-months"></i></a>
+</div>
+
+<div id="container"></div>
+<script>
+    <!-- chart code will be here -->
+    anychart.onDocumentReady(function() {
+        // set the data
+        var data = [
+            {x: "Impozite/Chirie", value: 1466},
+            {x: "Utilitati", value: 800},
+            {x: "Mancare", value: 1306},
+            {x: "Transport", value: 400},
+            {x: "Asigurari/Medical", value: 595},
+            {x: "Haine", value: 400},
+            {x: "Copii", value: 1000},
+            {x: "Distractie", value: 560}
+        ];
+
+        // create a pie chart and set the data
+        chart = anychart.pie(data);
+
+        /* set the inner radius
+        (to turn the pie chart into a doughnut chart)*/
+        chart.innerRadius("30%");
+
+        chart.labels().position("outside");
+        chart.connectorStroke({color: "#595959", thickness: 5, dash:"2 2"});
+        chart.labels().fontSize(40);
+
+        // set legend position
+        chart.legend().position("bottom");
+        chart.legend().iconSize("30");
+        chart.legend().fontSize(50);
+        // set items layout
+        chart.legend().itemsLayout("vertical");
+
+        // display the chart in the container
+        chart.container('container');
+        chart.draw();
+    });
+</script>
+
+</body>
+</html>

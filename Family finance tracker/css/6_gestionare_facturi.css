@@ -1,0 +1,103 @@
+.gest-facturi-body {
+    background: #76b852; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+    background: -moz-linear-gradient(right, #76b852, #8DC26F);
+    background: -o-linear-gradient(right, #76b852, #8DC26F);
+    background: linear-gradient(to left, #76b852, #8DC26F);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+}
+
+.top-div {
+    background-color: gray;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.gest-facturi-back-arrow {
+    color: white;
+    font-size: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: inline-block;
+    float: left;
+}
+
+.gest-facturi-plus-sign {
+    color: white;
+    font-size: 100px;
+    float: right;
+    margin-top: 50px;
+    margin-right: 50px;
+    display: inline-block;
+}
+
+#gest-facturi-top-title {
+    display: inline-block;
+    margin-top: 60px;
+    font-size: 65px;
+    color: white;
+    margin-left: 80px;
+}
+
+
+#gest-facturi-list-title {
+    color: white;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+#gest-facturi-main-list {
+    list-style-type: none;
+    display: block;
+    background: white;
+    padding: 0;
+}
+
+.gest-facturi-main-list-element {
+    border: 1px solid black;
+}
+
+.gest-facturi-main-list-element-dot {
+    float: left;
+    margin-top: 65px;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+.gest-facturi-main-list-element-name {
+    display: inline-block;
+    font-size: 50px;
+    margin-left: 35px;
+}
+
+.gest-facturi-main-list-element-price {
+    display: inline-block;
+    font-size: 50px;
+    float: right;
+    margin-right: 20px;
+}
+
+#adauga-facturi-top-title {
+    display: inline-block;
+    margin-top: 60px;
+    font-size: 65px;
+    color: white;
+    margin-left: 150px;
+}
+
+.camera-button {
+    font-size: 200px;
+    margin-top: 50px;
+    margin-left: 380px;
+    color: white;
+}
+
+
+

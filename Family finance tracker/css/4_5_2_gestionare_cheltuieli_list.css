@@ -1,0 +1,98 @@
+.gest-cheltuieli-body {
+    background: #76b852; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+    background: -moz-linear-gradient(right, #76b852, #8DC26F);
+    background: -o-linear-gradient(right, #76b852, #8DC26F);
+    background: linear-gradient(to left, #76b852, #8DC26F);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+}
+
+.top-div {
+    background-color: gray;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.gest-cheltuieli-back-arrow{
+    color: white;
+    font-size: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: inline-block;
+    float: left;
+}
+
+#gest-cheltuieli-listare-top-title{
+    display: inline-block;
+    margin-top: 60px;
+    font-size: 65px;
+    color: white;
+    margin-left: 18px;
+}
+
+.gest-cheltuieli-listare-top-left-icon {
+    font-size: 60px;
+    color: white;
+    float: left;
+    display: inline-block;
+    margin-top: 68px;
+    margin-left : 45px;
+}
+
+.gest-cheltuieli-listare-top-right-plus {
+    font-size: 100px;
+    color: white;
+    float: right;
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 50px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+td {
+    border: 2px solid black;
+    height: 30px;
+    font-size: 35px;
+}
+
+
+.gest-cheltuieli-list-date-td{
+    text-align: center;
+}
+
+.gest-cheltuieli-list-date-day{
+    margin : 10px 0 0
+}
+
+.gest-cheltuieli-list-date-month{
+    margin : 10px 0 0
+}
+
+.gest-cheltuieli-list-date-year{
+    margin : 10px 0 0
+}
+
+.gest-cheltuieli-list-price-td p {
+    margin-left: 15px;
+}
+.gest-cheltuieli-list-description-td p {
+    margin-left: 15px;
+}
+#gest-cheltuieli-list-title {
+    color: white;
+    font-size: 50px;
+    margin-left: 50px;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestionare conturi si carduri - adaugare</title>
+    <link rel="stylesheet" href="../css/7_2_gestionare_conturi.css" type="text/css">
+    <link href="../resources/fontawesome/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/7_2_gestionare_conturi.js"></script>
+</head>
+
+<body class="gest-conturi-body">
+
+<div class="top-div">
+    <a href="7_1_gestionare_conturi.html"><i class="fas fa-arrow-left gest-conturi-back-arrow"></i></a>
+    <p id="gest-conturi-top-title">Adaugare conturi/carduri</p>
+</div>
+
+<div>
+    <form>
+
+        <div class="gest-conturi-adauga-tip">
+            <label for="gest-conturi-add-tip">Tip:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <select name="incomeTypes" id="gest-conturi-add-tip">
+                <option value="ContCurent">Cont curent</option>
+                <option value="ContEconomii">Cont economii</option>
+                <option value="Card">Card</option>
+            </select>
+        </div>
+
+        <div id="form-cont-curent">
+        <br/>
+        <div>
+            <label for="cont-curent-add-description">Denumire:</label>
+            <input type="text" id="cont-curent-add-description"/>
+        </div>
+        <br/>
+        <div>
+            <label for="cont-curent-add-suma">Suma:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="number" id="cont-curent-add-suma"/>
+        </div>
+        <br/>
+            <div class="gest-conturi-adauga-moneda">
+                <label for="gest-conturi-curente-add-moneda">Moneda:&nbsp;&nbsp;</label>
+                <select name="incomeTypes" id="gest-conturi-curente-add-moneda">
+                    <option value="Lei">Lei</option>
+                    <option value="Euro">Euro</option>
+                </select>
+            </div>
+            <br/>
+        </div>
+
+        <div id="form-cont-economii">
+            <br/>
+            <div>
+                <label for="cont-economii-add-description">Denumire:</label>
+                <input type="text" id="cont-economii-add-description"/>
+            </div>
+            <br/>
+            <div>
+                <label for="cont-economii-add-suma">Suma:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="number" id="cont-economii-add-suma"/>
+            </div>
+            <br/>
+            <div class="gest-conturi-adauga-moneda">
+                <label for="gest-conturi-economii-add-moneda">Moneda:&nbsp;&nbsp;</label>
+                <select name="incomeTypes" id="gest-conturi-economii-add-moneda">
+                    <option value="Lei">Lei</option>
+                    <option value="Euro">Euro</option>
+                </select>
+            </div>
+            <br/>
+        </div>
+
+        <div id="form-carduri">
+            <br/>
+            <div>
+                <label for="carduri-add-description">Denumire:</label>
+                <input type="text" id="carduri-add-description"/>
+            </div>
+            <br/>
+            <div>
+                <label for="carduri-add-suma">Suma:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="number" id="carduri-add-suma"/>
+            </div>
+            <br/>
+            <div class="gest-conturi-adauga-moneda">
+                <label for="gest-carduri-add-moneda">Moneda:&nbsp;&nbsp;</label>
+                <select name="incomeTypes" id="gest-carduri-add-moneda">
+                    <option value="Lei">Lei</option>
+                    <option value="Euro">Euro</option>
+                </select>
+            </div>
+            <br/>
+            <div>
+                <label for="carduri-add-data">Expirare:&nbsp;&nbsp;</label>
+                <input type="date" id="carduri-add-data"/>
+            </div>
+            <br/>
+            <div>
+                <label for="carduri-add-proprietar">Proprietar:</label>
+                <input type="text" id="carduri-add-proprietar"/>
+            </div>
+            <br/>
+            <div>
+                <label for="carduri-add-banca">Banca: &nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="carduri-add-banca"/>
+            </div>
+            <br/>
+        </div>
+
+        <button type="button" id="gest-conturi-add-btn-adauga">Adauga</button>
+
+    </form>
+</div>
+
+<p id="mesaj-eroare"></p>
+
+</body>
+</html>

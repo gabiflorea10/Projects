@@ -1,0 +1,133 @@
+.copil-editare-obiectiv-body {
+    background: #76b852; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+    background: -moz-linear-gradient(right, #76b852, #8DC26F);
+    background: -o-linear-gradient(right, #76b852, #8DC26F);
+    background: linear-gradient(to left, #76b852, #8DC26F);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+}
+
+.top-div {
+    background-color: #e6ffe6;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.copil-editare-obiectiv-back-arrow{
+    color: #76b852;
+    font-size: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: inline-block;
+    float: left;
+}
+
+#copil_editare_obiectiv-top-title{
+    display: inline-block;
+    margin-top: 60px;
+    font-size: 65px;
+    color: #76b852;
+    margin-left: 80px;
+}
+
+h1
+{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 100px;
+
+}
+
+#tree_from_edit {
+
+    height: 470px;
+}
+
+#div_tree  {
+    text-align: center;
+}
+
+
+form {
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+form label {
+
+    font-size: 50px;
+    color: white;
+}
+
+form input {
+    background-color:#e6ffe6;
+    height: 70px;
+    width: 500px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: #76b852;
+}
+
+#add_button {
+    display: flex;
+    justify-content: center;
+}
+
+#add_button input {
+    font-size: 50px;
+    background-color: #e6ffe6;
+    border-radius: 30px;
+    width: 350px;
+    height: 70px;
+    margin-top: 50px;
+    color: #76b852;
+}
+
+
+form select {
+    display: inline-block;
+    height: 70px;
+    font-size: 50px;
+    width: 500px;
+    border-radius: 30px;
+    background: #e6ffe6;
+    color: #76b852;
+
+}
+form select option{
+    font-size: 10px;
+    color: #76b852;
+
+}
+
+#suma_adaugata_div{
+    margin-top: 50px;
+}
+
+section div label {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+#suma_alerta {
+    color: #ff253a;
+}
+#alert_div {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+
+}

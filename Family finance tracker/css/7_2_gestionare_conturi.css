@@ -1,0 +1,115 @@
+.gest-conturi-body {
+    background: #76b852; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+    background: -moz-linear-gradient(right, #76b852, #8DC26F);
+    background: -o-linear-gradient(right, #76b852, #8DC26F);
+    background: linear-gradient(to left, #76b852, #8DC26F);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+}
+
+.top-div {
+    background-color: gray;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.gest-conturi-back-arrow{
+    color: white;
+    font-size: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: inline-block;
+    float: left;
+}
+
+#gest-conturi-top-title {
+    display: inline-block;
+    margin-top: 60px;
+    font-size: 65px;
+    color: white;
+    margin-left: 80px;
+}
+
+form label{
+    display: inline-block;
+    font-size: 65px;
+    margin-right: 30px;
+    margin-top: 40px;
+    margin-left: 50px;
+    color: white;
+    width: 300px;
+}
+
+div p{
+    display: inline-block;
+    font-size: 60px;
+    margin-right: 30px;
+    margin-top: 40px;
+    margin-left: 50px;
+    color: white;
+    width: 730px;
+    height: 20px;
+}
+
+form input {
+    display: inline-block;
+    height: 65px;
+    font-size: 60px;
+    width: 550px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+form select {
+    display: inline-block;
+    height: 95px;
+    font-size: 55px;
+    line-height: 1;
+    width: 580px;
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    background: white url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat 60px center;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background-position-x: 520px;
+}
+
+form select option{
+    font-size: 25px;
+}
+
+#gest-conturi-add-btn-adauga{
+    width: 300px;
+    height: 150px;
+    font-size: 50px;
+    margin-left: 340px;
+    margin-top: 100px;
+}
+
+#form-cont-curent{
+
+}
+
+#form-cont-economii{
+    display: none;
+}
+
+#form-carduri{
+    display: none;
+}
+
+#mesaj-eroare {
+    text-align: center;
+    color: red;
+    font-size: 50px;
+    margin-left: 50px;
+}

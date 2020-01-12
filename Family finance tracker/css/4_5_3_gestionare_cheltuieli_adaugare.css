@@ -1,0 +1,87 @@
+.gest-cheltuieli-body {
+    background: #76b852; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+    background: -moz-linear-gradient(right, #76b852, #8DC26F);
+    background: -o-linear-gradient(right, #76b852, #8DC26F);
+    background: linear-gradient(to left, #76b852, #8DC26F);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+}
+
+.top-div {
+    background-color: gray;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.gest-cheltuieli-back-arrow{
+    color: white;
+    font-size: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: inline-block;
+    float: left;
+}
+
+
+#gest-cheltuieli-adaugare-top-title{
+    display: inline-block;
+    margin-top: 60px;
+    font-size: 65px;
+    color: white;
+    margin-left: 100px;
+}
+
+.gest-cheltuieli-add-title {
+    color: white;
+    font-size: 65px;
+    margin-left: 220px;
+}
+
+#gest-cheltuieli-add-receipt-picture {
+    width: 300px;
+    height: 150px;
+    font-size: 50px;
+    margin-left: 340px;
+}
+
+form label{
+    display: inline-block;
+    font-size: 50px;
+    margin-right: 30px;
+    margin-top: 40px;
+    margin-left: 100px;
+    color: white;
+}
+
+form input {
+    display: inline-block;
+    height: 50px;
+    font-size: 45px;
+    width: 550px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+#gest-cheltuieli-add-receipt-btn-adauga{
+    width: 300px;
+    height: 150px;
+    font-size: 50px;
+    margin-left: 340px;
+    margin-top: 100px;
+}
+
+#gest-cheltuieli-error-message{
+    font-size: 45px;
+    margin-top: 30px;
+    margin-left: 255px;
+    color: red;
+    margin-bottom: 15px;
+}

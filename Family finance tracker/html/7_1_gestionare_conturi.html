@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestionare conturi si carduri</title>
+    <link rel="stylesheet" href="../css/7_1_gestionare_conturi.css" type="text/css">
+    <link href="../resources/fontawesome/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/7_1_gestionare_conturi.js"></script>
+</head>
+
+<body class="gest-conturi-body">
+
+<div class="top-div">
+    <a href="2_1_pagina_principala_adult.html"><i class="fas fa-arrow-left gest-conturi-back-arrow"></i></a>
+    <p id="gest-conturi-top-title">Conturi si carduri</p>
+    <a href="7_2_gestionare_conturi.html"><i class="fas fa-plus gest-conturi-plus-sign"></i></a>
+</div>
+
+<div class="gest-conturi-list">
+
+    <ul id="tipuri-conturi-main-list">
+        <li id="gest-conturi-li-curente" class="gest-conturi-main-list-element">
+            <div id="clickable-curente">
+            <p class="gest-conturi-main-list-element-name">Conturi curente</p>
+            <i class="fas fa-chevron-right gest-conturi-right-arrow" id="right-arrow-curente"></i>
+            </div>
+            <div class="conturi-curente-list">
+                <ul id="conturi-curente-main-list">
+                </ul>
+            </div>
+        </li>
+        <li id="gest-conturi-li-economii" class="gest-conturi-main-list-element">
+            <div id="clickable-economii">
+            <p class="gest-conturi-main-list-element-name">Conturi de economii</p>
+            <i class="fas fa-chevron-right gest-conturi-right-arrow" id="right-arrow-economii"></i>
+            </div>
+            <div class="conturi-economii-list">
+                <ul id="conturi-economii-main-list">
+                </ul>
+            </div>
+        </li>
+        <li id="gest-conturi-li-carduri"  class="gest-conturi-main-list-element">
+            <div id="clickable-carduri">
+                <p class="gest-conturi-main-list-element-name">Carduri</p>
+                <i class="fas fa-chevron-right gest-conturi-right-arrow" id="right-arrow-carduri"></i>
+            </div>
+            <div class="carduri-list">
+                <ul id="carduri-main-list">
+                </ul>
+            </div>
+        </li>
+    </ul>
+
+</div>
+
+
+</body>
+</html>
