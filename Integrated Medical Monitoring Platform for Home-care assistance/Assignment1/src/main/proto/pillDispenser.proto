@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.ds.Assignment1.pillDispenser";
+option java_outer_classname = "PillDispenserProto";
+option objc_class_prefix = "HLW";
+
+service MedPlan {
+   rpc FetchMedPlans (DateMessage) returns (MedPlansList) {}
+   rpc ProcessActions (MedicationPlansReport) returns (EmptyMessage) {}
+}
+
+message EmptyMessage {
+
+}
+
+message DateMessage {
+  string currentDate = 1;
+}
+
+message DayReport {
+  string content = 1;
+}
+
+message MedicationPlansReport {
+  string type = 1;
+  repeated DayReport reports = 2;
+}
+
+message MedPlanView {
+  string patient_name = 1;
+  string medication_name = 2;
+  string side_effects = 3;
+  int32 dosage = 4;
+  string intake_interval = 5;
+  string start_time = 6;
+  string end_time = 7;
+  string doctor_name = 8;
+}
+
+message MedPlansList {
+  repeated MedPlanView medPlanView = 1;
+}

@@ -1,0 +1,23 @@
+version: "3"
+
+networks:
+  ds_net:
+    external:
+      name: ds_net
+
+
+services:
+
+  spring-grpc-app:
+    image: grpc-app-image
+    container_name: spring-grpc-app
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    networks:
+      - ds_net
+    ports:
+      - 8890:8890
+    volumes:
+      - D:/ds_docker:/ds_docker
+

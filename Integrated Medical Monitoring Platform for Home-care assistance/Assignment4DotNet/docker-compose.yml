@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  assignment4dotnet:
+    image: ${DOCKER_REGISTRY-}assignment4dotnet
+    build:
+      context: ./Assignment4DotNet
+      dockerfile: Dockerfile

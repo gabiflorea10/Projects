@@ -1,0 +1,36 @@
+version: "3"
+
+networks:
+  ds_net:
+    external:
+      name: ds_net
+
+
+services:
+
+  spring-rest-app:
+    image: rest-app-image
+    container_name: spring-rest-app
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    networks:
+      - ds_net
+    ports:
+      - 8888:8888
+      - 8889:8889
+    volumes:
+      - D:/ds_docker:/ds_docker
+
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    container_name: rabbitmq
+    networks:
+      - ds_net
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - D:/ds_docker/rabbit:/ds_docker/rabbit
+
+

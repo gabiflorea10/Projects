@@ -1,0 +1,22 @@
+version: "3"
+
+networks:
+  ds_net:
+    external:
+      name: ds_net
+
+services:
+
+  java-ws-app:
+    image: java-ws-image
+    container_name: java-ws-app
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    networks:
+      - ds_net
+    ports:
+      - 9999:9999
+      - 9997:9997
+    volumes:
+      - D:/ds_docker:/ds_docker

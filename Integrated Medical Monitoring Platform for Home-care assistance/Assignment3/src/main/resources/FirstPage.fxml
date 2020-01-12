@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ds.Assignment3.pillDispenser.controller.PillDispenserController">
+   <children>
+      <Label fx:id="label" layoutX="285.0" layoutY="176.0" prefHeight="48.0" prefWidth="293.0" />
+      <Button layoutX="890.0" layoutY="533.0" mnemonicParsing="false" onAction="#takeMed" text="Taken" />
+      <TableView fx:id="tableView" layoutX="6.0" layoutY="86.0" onMouseClicked="#handleClick" prefHeight="428.0" prefWidth="989.0">
+        <columns>
+          <TableColumn fx:id="patientColumn" prefWidth="136.0" text="Patient" />
+          <TableColumn fx:id="medicationColumn" prefWidth="148.0" text="Medication" />
+            <TableColumn fx:id="dosageColumn" prefWidth="104.0" text="Dosage" />
+            <TableColumn fx:id="startColumn" minWidth="1.0" prefWidth="118.0" text="Start date" />
+            <TableColumn fx:id="endColumn" prefWidth="131.0" text="End date" />
+            <TableColumn fx:id="intakeCol" prefWidth="124.0" text="Intake interval" />
+            <TableColumn fx:id="doctorColumn" prefWidth="129.0" text="Doctor" />
+            <TableColumn fx:id="takenCol" prefWidth="98.0" text="Label" />
+        </columns>
+      </TableView>
+      <Label layoutX="87.0" layoutY="14.0" prefHeight="48.0" prefWidth="160.0" text="Pill dispenser">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="547.0" layoutY="38.0" prefHeight="48.0" prefWidth="131.0" text="Time(simulated):">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeLabel" layoutX="656.0" layoutY="14.0" prefHeight="27.0" prefWidth="226.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="547.0" layoutY="3.0" prefHeight="48.0" prefWidth="131.0" text="Time(real):">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeSimLabel" layoutX="699.0" layoutY="49.0" prefHeight="27.0" prefWidth="226.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
