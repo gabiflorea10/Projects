@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "732806790928",
+    "firebase_url": "https://rehearsalapp-5fa31.firebaseio.com",
+    "project_id": "rehearsalapp-5fa31",
+    "storage_bucket": "rehearsalapp-5fa31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732806790928:android:1f0c227690e75de79d6f95",
+        "android_client_info": {
+          "package_name": "com.example.rehearsalapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "732806790928-1dduj39885h02gde9inau48fuobd09mg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw98CPJkxsOQRGPHlthusa2IRQmC419o0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "732806790928-1dduj39885h02gde9inau48fuobd09mg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
