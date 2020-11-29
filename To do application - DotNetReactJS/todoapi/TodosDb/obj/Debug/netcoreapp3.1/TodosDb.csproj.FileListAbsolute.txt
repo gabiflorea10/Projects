@@ -1,0 +1,12 @@
+C:\Users\gabiflorea\Desktop\Projects\todoapi\TodosDb\bin\Debug\netcoreapp3.1\TodosDb.deps.json
+C:\Users\gabiflorea\Desktop\Projects\todoapi\TodosDb\bin\Debug\netcoreapp3.1\TodosDb.runtimeconfig.json
+C:\Users\gabiflorea\Desktop\Projects\todoapi\TodosDb\bin\Debug\netcoreapp3.1\TodosDb.runtimeconfig.dev.json
+C:\Users\gabiflorea\Desktop\Projects\todoapi\TodosDb\bin\Debug\netcoreapp3.1\TodosDb.dll
+C:\Users\gabiflorea\Desktop\Projects\todoapi\TodosDb\bin\Debug\netcoreapp3.1\TodosDb.pdb
+C:\Users\gabiflorea\Desktop\Projects\todoapi\TodosDb\obj\Debug\netcoreapp3.1\TodosDb.csprojAssemblyReference.cache
+C:\Users\gabiflorea\Desktop\Projects\todoapi\TodosDb\obj\Debug\netcoreapp3.1\TodosDb.AssemblyInfoInputs.cache
+C:\Users\gabiflorea\Desktop\Projects\todoapi\TodosDb\obj\Debug\netcoreapp3.1\TodosDb.AssemblyInfo.cs
+C:\Users\gabiflorea\Desktop\Projects\todoapi\TodosDb\obj\Debug\netcoreapp3.1\TodosDb.csproj.CoreCompileInputs.cache
+C:\Users\gabiflorea\Desktop\Projects\todoapi\TodosDb\obj\Debug\netcoreapp3.1\TodosDb.dll
+C:\Users\gabiflorea\Desktop\Projects\todoapi\TodosDb\obj\Debug\netcoreapp3.1\TodosDb.pdb
+C:\Users\gabiflorea\Desktop\Projects\todoapi\TodosDb\obj\Debug\netcoreapp3.1\TodosDb.genruntimeconfig.cache

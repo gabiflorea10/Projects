@@ -1,0 +1,12 @@
+C:\Users\gabiflorea\Desktop\Projects\TodoApi\TodosCore\obj\Debug\netcoreapp3.1\TodosCore.csprojAssemblyReference.cache
+C:\Users\gabiflorea\Desktop\Projects\TodoApi\TodosCore\obj\Debug\netcoreapp3.1\TodosCore.AssemblyInfoInputs.cache
+C:\Users\gabiflorea\Desktop\Projects\TodoApi\TodosCore\obj\Debug\netcoreapp3.1\TodosCore.AssemblyInfo.cs
+C:\Users\gabiflorea\Desktop\Projects\TodoApi\TodosCore\obj\Debug\netcoreapp3.1\TodosCore.csproj.CoreCompileInputs.cache
+C:\Users\gabiflorea\Desktop\Projects\TodoApi\TodosCore\bin\Debug\netcoreapp3.1\TodosCore.deps.json
+C:\Users\gabiflorea\Desktop\Projects\TodoApi\TodosCore\bin\Debug\netcoreapp3.1\TodosCore.dll
+C:\Users\gabiflorea\Desktop\Projects\TodoApi\TodosCore\bin\Debug\netcoreapp3.1\TodosCore.pdb
+C:\Users\gabiflorea\Desktop\Projects\TodoApi\TodosCore\bin\Debug\netcoreapp3.1\TodosDb.dll
+C:\Users\gabiflorea\Desktop\Projects\TodoApi\TodosCore\bin\Debug\netcoreapp3.1\TodosDb.pdb
+C:\Users\gabiflorea\Desktop\Projects\TodoApi\TodosCore\obj\Debug\netcoreapp3.1\TodosCore.csproj.CopyComplete
+C:\Users\gabiflorea\Desktop\Projects\TodoApi\TodosCore\obj\Debug\netcoreapp3.1\TodosCore.dll
+C:\Users\gabiflorea\Desktop\Projects\TodoApi\TodosCore\obj\Debug\netcoreapp3.1\TodosCore.pdb
